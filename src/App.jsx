@@ -36,7 +36,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-black text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-black text-white overflow-y-auto overflow-x-hidden" style={{height: '100vh'}}>
       {/* Hero Section */}
       <motion.section 
         className="relative min-h-screen flex items-center justify-center px-4"
@@ -340,9 +340,7 @@ function App() {
           
           <div className="mt-12 pt-8 border-t border-gray-700">
             <p className="text-gray-400">
-              © 2024 JUPURR. All rights reserved. Not financial advice. DYOR. 
-              <br />
-              This is a meme. Don't take it seriously. But also, maybe do? 😺
+              © 2024 JUPURR. All rights reserved.
             </p>
           </div>
         </div>

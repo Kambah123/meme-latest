@@ -111,8 +111,9 @@
 }
 
 /* Smooth scrolling */
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow: hidden; /* Prevent browser scrollbars */
 }
 
 /* Custom gradient backgrounds */
