@@ -296,6 +296,7 @@ function App() {
                       autoPlay 
                       loop 
                       muted 
+                      playsInline
                       className="rounded-lg shadow-2xl max-w-full h-auto"
                       style={{ maxHeight: '300px' }}
                     />
