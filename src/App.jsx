@@ -83,8 +83,17 @@ function App() {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-black font-bold text-lg px-8 py-4 rounded-full transform hover:scale-105 transition-all duration-300"
+              onClick={() => {
+                // Vibrate if supported
+                if (navigator.vibrate) {
+                  navigator.vibrate([100, 30, 100, 30, 200]);
+                }
+                // Play purr sound
+                const audio = new Audio(require('./assets/purr.mp3'));
+                audio.play();
+              }}
             >
-              Join the Purr-ty 🚀
+              Puuurrrr! 🐾
             </Button>
           </motion.div>
         </div>
@@ -170,6 +179,23 @@ function App() {
 
         </div>
       </motion.section>
+
+      {/* Purr Videos Section */}
+      <section className="py-16 px-4 bg-gradient-to-r from-yellow-900/40 to-orange-900/40">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-center mb-10 bg-gradient-to-r from-orange-300 to-yellow-200 bg-clip-text text-transparent">
+            Purr Videos
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <video src="/pur1.mp4" controls className="w-full rounded-lg shadow-lg" poster="/im2.jpeg">
+              Sorry, your browser does not support embedded videos.
+            </video>
+            <video src="/pur2.mp4" controls className="w-full rounded-lg shadow-lg" poster="/im3.jpeg">
+              Sorry, your browser does not support embedded videos.
+            </video>
+          </div>
+        </div>
+      </section>
 
       {/* Bio Section */}
       <motion.section 
