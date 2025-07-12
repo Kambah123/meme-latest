@@ -234,7 +234,7 @@ function App() {
                 {[
                   { icon: "🐱", text: "Head of a cat" },
                   { icon: "🌐", text: "Body of the planet Jupiter" },
-                  { icon: "🧼", text: "Wears a helmet because the fumes are legally considered a biohazard" },
+                  { icon: null, text: "The fumes are legally considered a biohazard" },
                   { icon: "💨", text: "Purrs at 432,000 decibels — enough to break Raydium" },
                   { icon: "🪀", text: "Tail draws perfect Fibonacci retracements (but only by accident)" }
                 ].map((item, index) => (
@@ -244,7 +244,9 @@ function App() {
                     whileHover={{ scale: 1.02 }}
                   >
                     <span className="text-2xl">{item.icon}</span>
-                    <span className="text-lg text-gray-200">{item.text}</span>
+                    <span className="text-lg md:text-2xl font-bold bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent jupurr-text-glow">
+                      {item.text}
+                    </span>
                   </motion.div>
                 ))}
               </div>
@@ -280,14 +282,14 @@ function App() {
       >
         <div className="max-w-6xl mx-auto">
           <motion.h2 
-            className="text-4xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent"
+            className="text-4xl md:text-6xl font-bold text-center mb-8 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent title-bangers"
             variants={fadeInUp}
           >
-            🧻 RELATIONSHIP WITH URANUS
+            🧻 RELATIONSHIP WITH URANUS 🪐💨
           </motion.h2>
           
           <motion.p 
-            className="text-2xl text-center mb-16 text-blue-200 font-medium"
+            className="text-2xl text-center mb-16 bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent font-medium"
             variants={fadeInUp}
           >
             "Uranus? Please. That guy launched with a toilet paper supply of 420 million. He's not a planet. He's a buttcoin."
@@ -300,19 +302,27 @@ function App() {
                   <div className="space-y-6">
                     <div className="flex items-center space-x-3">
                       <span className="text-2xl">🏠</span>
-                      <span className="text-lg text-gray-200">$URANUS is his sworn rival and roommate.</span>
+                      <span className="text-lg bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent">
+                        $URANUS is his sworn rival and roommate.
+                      </span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <span className="text-2xl">🚀</span>
-                      <span className="text-lg text-gray-200">They live together on Solana's Launchpad Floor 2B.</span>
+                      <span className="text-lg bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent">
+                        They live together on Solana's Launchpad Floor 2B.
+                      </span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <span className="text-2xl">🚽</span>
-                      <span className="text-lg text-gray-200">Uranus keeps clogging the liquidity pipes. Jupurr eats the clogs.</span>
+                      <span className="text-lg bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent">
+                        Uranus keeps clogging the liquidity pipes. Jupurr eats the clogs.
+                      </span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <span className="text-2xl">🌯</span>
-                      <span className="text-lg text-gray-200">They once fought for 6 hours over a Crunchwrap Supreme.</span>
+                      <span className="text-lg bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-600 bg-clip-text text-transparent">
+                        They once fought for 6 hours over a Crunchwrap Supreme.
+                      </span>
                     </div>
                   </div>
                   
